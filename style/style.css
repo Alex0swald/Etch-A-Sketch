@@ -1,0 +1,133 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+  body {
+      background-color: white;
+  }
+
+  #infoBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #infoBox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #center{
+    position: relative; 
+    max-width: 60%;
+    margin: auto;
+  }
+  
+  #grid{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 5px solid black;
+    background-color: white;
+    
+  }
+  
+  .grid-item {
+    padding: 1em;
+    /* border: 1px solid #ddd; */
+    text-align: center;
+  }
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    background-color:
+    #BFC0C0;
+    border: 1px solid
+    #BFC0C0;
+    border-radius: 4px;
+    color:white;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-box-shadow: 10px 10px 100px 1px rgba(79,93,117,0.25);
+    -moz-box-shadow: 10px 10px 100px 1px rgba(79,93,117,0.25);
+    box-shadow: 10px 10px 100px 1px rgba(79,93,117,0.25);
+}
+
+button:hover {
+box-shadow: 0 1px 1px
+rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+background-color:
+#EFF1F3;
+border: 1px solid
+#c6c6c6;
+color:
+#222;
+}
+
+button:focus {
+    border: 1px solid
+    #2D3142;
+    outline: none;
+}
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+#input{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    
+    
+    margin-top: -37px;
+    font: 16px arial,sans-serif;
+    line-height: normal;
+    line-height: 34px;
+    height: 34px !important;
+    background: #fff;
+    
+    border-radius: 8px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+   
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
